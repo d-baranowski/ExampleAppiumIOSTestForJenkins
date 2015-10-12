@@ -26,7 +26,6 @@ public class MyTest {
 		Thread.sleep(5000);
 	}
   
-@BeforeMethod
 @BeforeTest
 public void setUp() throws Exception {
     DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -43,7 +42,6 @@ public void setUp() throws Exception {
 	}
 }
 
-@AfterMethod
 @AfterTest
   public static void tearDown(){
 		driver.quit();
